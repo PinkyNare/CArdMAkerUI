@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/banner_lay_img_ed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/banner_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#ff0099"
+                android:padding="1dp"
+                android:text="AD"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/banner_img_ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bannerspace_img_ed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/banner_lay_img_ed">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ed_img"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appcolorclk"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:titleMarginStart="16dp"
+
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_btmfrms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:id="@+id/recparms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/_reclfrm_imgs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_mid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rel_btmfrms"
+            android:layout_below="@+id/toolbar_ed_img">
+
+            <RelativeLayout
+                android:id="@+id/rel_imgcrpadd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

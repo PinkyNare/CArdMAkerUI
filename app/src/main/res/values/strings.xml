@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CArdMAkerUI</string>
+    <string name="galry_name">Gallery</string>
+    <string name="camera_name">Camera</string>
+
+
+    <string name="App_id"></string>
+
+    <string name="Banner_Ad_id"></string>
+    <string name="Interstitial_Ad_id_entry"></string>
+
+    <string name="Interstitial_Ad_id_entryonsave"></string>
+
+
+    <string name="crop__saving">Saving picture</string>
+    <string name="crop__wait">Please wait</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">Done</string>
+    <string name="crop__cancel">Cancel</string>
+
+    <string name="share">Share</string>
+    <string-array name="switchLangArr">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Telugu</item>
+        <item>Kannada</item>
+        <item>Tamil</item>
+        <item>Gujarati</item>
+        <item>Marathi</item>
+        <item>Punjabi</item>
+
+
+    </string-array>
+
+</resources>
